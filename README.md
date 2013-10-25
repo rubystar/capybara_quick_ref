@@ -12,7 +12,7 @@ capybara_quick_ref
 ```ruby
   click_link("Ads")    # Name or id of the link
   click_button("Save") # Name or id of the button
-  click_on             # Either link or button
+  click_on("some")     # Either link or button
 ```
 #### Form elements
 ```ruby
