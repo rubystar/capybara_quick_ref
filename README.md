@@ -20,7 +20,7 @@ capybara_quick_ref
   select("Male", :from => "gender_id")      # Normal Select, Use id of the field
   select2_select("Male", "gender_id_input") # Select2 select, _input is necessory
   check('A Checkbox')                       # Checkbox, use id or name
-  page.choose('By Product')                 # Name or id of the field  # Radio Button
+  page.choose('A Radiobutton')              # Name or id of the Radio Button
 ```
 #### Page expectations
 ```ruby
