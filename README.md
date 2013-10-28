@@ -20,4 +20,7 @@ capybara_quick_ref
   select2_select("Male", "gender_id_input") # Select2 select, _input is necessory
   check('A Checkbox')                       # Checkbox, use id or name
 ```  
-
+####Check alert messages
+```ruby
+  page.driver.alert_messages.should == ["Alert Message."]
+```
