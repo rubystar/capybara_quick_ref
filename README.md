@@ -30,3 +30,7 @@ capybara_quick_ref
   expect(page).to have_css(".acitve")          # expecting css
 ```
 
+####Check alert messages
+```ruby
+  page.driver.alert_messages.should == ["Alert Message."]
+```
