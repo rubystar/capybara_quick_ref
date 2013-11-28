@@ -23,14 +23,25 @@ capybara_quick_ref
   check('A Checkbox')                       # Checkbox, use id or name
   choose('Male')                            # Name or id of the Radio Button
 ```
+#### Auto complete
+```ruby
+fill_in_autocomplete("#advertiser_id", "adver")
+choose_autocomplete("advertiser")
+```
 #### Page expectations
 ```ruby
-  expect(page).to have_content("Awesome Post") # expecting text  
-  expect(page).to have_link("Edit Post")       # expecting link
-  expect(page).to have_css(".acitve")          # expecting css
+  expect(page).to have_content("Awesome Post")                 # expecting text  
+  expect(page).to have_link("Edit Post")                       # expecting link
+  expect(page).to have_css(".acitve")                          # expecting css
+  expect(page).to have_select('Company', :options => ['RMM'])  # expecting select field with options
+  expect(page).to have_field('name', with: "siva")             # expecting text field with some value
 ```
 
 ####Check alert messages
 ```ruby
   page.driver.alert_messages.should == ["Alert Message."]
+```
+#### Other
+```ruby
+find("#sites_more_actions").trigger(:mouseover)
 ```
