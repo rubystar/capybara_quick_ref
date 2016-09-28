@@ -45,3 +45,5 @@ choose_autocomplete("advertiser")
 ```ruby
 find("#sites_more_actions").trigger(:mouseover)
 ```
+
+...test..
